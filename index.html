@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>My Example</title>
+
+<!-- CSS -->
+<style>
+.myForm {
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.8em;
+width: 20em;
+padding: 1em;
+border: 1px solid #ccc;
+}
+
+.myForm * {
+box-sizing: border-box;
+}
+
+.myForm fieldset {
+border: none;
+padding: 0;
+}
+
+.myForm legend,
+.myForm label {
+padding: 0;
+font-weight: bold;
+}
+
+.myForm label.choice {
+font-size: 0.9em;
+font-weight: normal;
+}
+
+.myForm input[type="text"],
+.myForm input[type="tel"],
+.myForm input[type="email"],
+.myForm input[type="datetime-local"],
+.myForm select,
+.myForm textarea {
+display: block;
+width: 100%;
+border: 1px solid #ccc;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.9em;
+padding: 0.3em;
+}
+
+.myForm textarea {
+height: 100px;
+}
+
+.myForm button {
+padding: 1em;
+border-radius: 0.5em;
+background: #eee;
+border: none;
+font-weight: bold;
+margin-top: 1em;
+}
+
+.myForm button:hover {
+background: #ccc;
+cursor: pointer;
+}
+</style>
+
+
+</head>
+<body>
+
+<form class="myForm" method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+
+<h1> Inscripcion Servicio Social </h1>
+
+<p>
+<label>Org
+<input type="text" name="customer_name" required>
+</label> 
+</p>
+	
+<p>
+<label>Taller
+<select id="pickup_place" name="pickup_place">
+<option value="" selected="selected">Select One</option>
+<option value="1" > Talleres AAMI</option>
+<option value="2" > Abrazo ACUMI</option>
+<option value="" >Salvando al Desierto de los Leones</option>
+<option value="" >Educación y rehabilitación integral a personas con parálisis cerebral.</option>
+<option value="" >Lucha contra la Esclerósis lateral Amiotrófica con Apoyo Integral Gila</option>
+<option value="" >Di sí a la vida. Sí a la donación de órganos</option>
+<option value="" >Amiestades uno a uno/ Salidas recreativas</option>
+<option value="" >Block tras block</option>
+<option value="" >Integración multidisciplinaria intergeneracional en la casa hogar para adultos mayores</option>
+<option value="" >Vida independiente para personas adultas con discapacidad intelectual</option>
+<option value="" >Cursos presenciales y virtuales del CCA</option>
+<option value="" >Dándonos a conocer</option>
+<option value="" >Compartir fraterno</option>
+<option value="" >Apoyo a la comunidad y al centro/Clases a los niños de preescolar</option>
+<option value="" >Proyecto de investigación en evaluación de políticas públicas y programas sociales.</option>
+<option value="" >Tocando corazones</option>
+<option value="" >COMUNAL Comunidad Altruista</option>
+<option value="" >Crecemos Leyendo</option>
+<option value="" >Cvium</option>
+<option value="" >Nunayú</option>
+<option value="" >Linfty</option>
+<option value="" >Ingeniería: principios y aplicaciones</option>
+<option value="" >Impartir clases de computación e inglés</option>
+<option value="" >Finanzas mano a mano e impulsando mi producto</option>
+<option value="" >Promover una educación integral de los niños, fortaleciendo diferentes procesos y programas</option>
+<option value="" >Estrategia de posicionamiento</option>
+<option value="" >Transformando mi comunidad</option>
+<option value="" >Armado de mapa solidario</option>
+<option value="" >Atención a derechohabientes en estado vulnerable del ISSSTE</option>
+<option value="" >Yo soy voluntario lazos</option>
+<option value="" >Fortaleciendo a quien fortalece</option>
+<option value="" >Relaciones personales de calidad y proyectos personales</option>
+<option value="" >Promoción y desarrollo de habilidades sociales en niños</option>
+<option value="" >Educación ambiental</option>
+<option value="" >Asesorías educativas y recreativas</option>
+<option value="" >Talleres de apoyo al aprendizaje y lenguaje</option>
+<option value="" >Jóvenes narradores Tec</option>
+<option value="" >Trabajando en el fortalecimeinto de grupos vulnerables atendidos en I.A.P.</option>
+<option value="" >LAO Laboratorio de Artes y Oficios</option>
+<option value="" >Luka</option>
+<option value="" >Reinventando horizontes para la longevidad y su vinculación con proyectos laborales</option>
+<option value="" >Mini borregos</option>
+<option value="" >Motivos para amar a México</option>
+<option value="" >Fortalecimiento cultural y social del entorno actual</option>
+<option value="" >Desarrollo sostenible con perspectiva de Derechos Humanos en zona urbano marginal</option>
+<option value="" >Apoyo a programas de desarrollo comunitario y educación en nutrición y sostenibilidad</option>
+<option value="" >Actualización del Sistema de Información Estadística Municipal de Gobernabilidad y Desarrollo</option>
+<option value="" >Pakaraima</option>
+<option value="" >Comunicación social/Creando comunidad</option>
+<option value="" >Asesoría prepanet</option>
+<option value="" >Mercadotecnia/Acompañamiento en actividades deportivas/Desarrollo psicomotriz</option>
+<option value="" >Regeneración socioambiental de la Barranca de Tarango</option>
+<option value="" >Campaña para captar nuevos donantes y estrategias para crecer el taller de panadería</option>
+<option value="" >Apoyo al paramédico integral</option>
+<option value="" >Diseño e implementación de estrategias de incremento de impacto</option>
+<option value="" >Implementación de recomendaciones de capitalismo consciente</option>
+<option value="" >Programas de Unidos CDMX</option>
+<option value="" >Voluntariado IMSS</option>
+<option value="" >Proyectando vidas</option>
+<option value="" >Educando a la niñez</option>
+<option value="" >SER (separación ecológica de residuos)</option>
+
+
+</select>
+</label> 
+</p>
+
+
+<p>
+<label>Nombre 
+<input type="tel" name="phone_number">
+</label>
+</p>
+
+<p>
+<label>Matricula
+<input type="text" name="email_address">
+</label>
+</p>
+
+<p><button>Enviar</button></p>
+
+</form>
+
+
+<form name="submit-to-google-sheet" class="myForm" method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+
+
+<h1> Inscripcion Servicio Social </h1>
+
+<p>
+  <input name="email" type="email" placeholder="Email" required>
+</p>
+<p>
+  <input name="matricula" type="text" placeholder="matricula">
+  <input name="nombre" type="text" placeholder="nombre">
+</p>
+
+<p>
+  <select name="proyecto">	  
+<option value="" selected="selected">Proyecto</option>
+<option value="1" > Talleres AAMI</option>
+<option value="2" > Abrazo ACUMI</option>
+<option value="3" >Salvando al Desierto de los Leones</option>
+<option value="4" >Educación y rehabilitación integral a personas con parálisis cerebral.</option>
+<option value="5" >Lucha contra la Esclerósis lateral Amiotrófica con Apoyo Integral Gila</option>
+<option value="6" >Di sí a la vida. Sí a la donación de órganos</option>
+<option value="7" >Amiestades uno a uno/ Salidas recreativas</option>
+<option value="8" >Block tras block</option>
+<option value="9" >Integración multidisciplinaria intergeneracional en la casa hogar para adultos mayores</option>
+<option value="10" >Vida independiente para personas adultas con discapacidad intelectual</option>
+<option value="11" >Cursos presenciales y virtuales del CCA</option>
+<option value="12" >Dándonos a conocer</option>
+<option value="13" >Compartir fraterno</option>
+<option value="14" >Apoyo a la comunidad y al centro/Clases a los niños de preescolar</option>
+<option value="15" >Proyecto de investigación en evaluación de políticas públicas y programas sociales.</option>
+<option value="16" >Tocando corazones</option>
+<option value="17" >COMUNAL Comunidad Altruista</option>
+<option value="18" >Crecemos Leyendo</option>
+<option value="19" >Cvium</option>
+<option value="20" >Nunayú</option>
+<option value="21" >Linfty</option>
+<option value="22" >Ingeniería: principios y aplicaciones</option>
+<option value="23" >Impartir clases de computación e inglés</option>
+<option value="24" >Finanzas mano a mano e impulsando mi producto</option>
+<option value="25" >Promover una educación integral de los niños, fortaleciendo diferentes procesos y programas</option>
+<option value="26" >Estrategia de posicionamiento</option>
+<option value="27" >Transformando mi comunidad</option>
+<option value="28" >Armado de mapa solidario</option>
+<option value="29" >Atención a derechohabientes en estado vulnerable del ISSSTE</option>
+<option value="30" >Yo soy voluntario lazos</option>
+<option value="31" >Fortaleciendo a quien fortalece</option>
+<option value="32" >Relaciones personales de calidad y proyectos personales</option>
+<option value="33" >Promoción y desarrollo de habilidades sociales en niños</option>
+<option value="34" >Educación ambiental</option>
+<option value="35" >Asesorías educativas y recreativas</option>
+<option value="36" >Talleres de apoyo al aprendizaje y lenguaje</option>
+<option value="37" >Jóvenes narradores Tec</option>
+<option value="38" >Trabajando en el fortalecimeinto de grupos vulnerables atendidos en I.A.P.</option>
+<option value="39" >LAO Laboratorio de Artes y Oficios</option>
+<option value="40" >Luka</option>
+<option value="41" >Reinventando horizontes para la longevidad y su vinculación con proyectos laborales</option>
+<option value="42" >Mini borregos</option>
+<option value="43" >Motivos para amar a México</option>
+<option value="44" >Fortalecimiento cultural y social del entorno actual</option>
+<option value="45" >Desarrollo sostenible con perspectiva de Derechos Humanos en zona urbano marginal</option>
+<option value="46" >Apoyo a programas de desarrollo comunitario y educación en nutrición y sostenibilidad</option>
+<option value="47" >Actualización del Sistema de Información Estadística Municipal de Gobernabilidad y Desarrollo</option>
+<option value="48" >Pakaraima</option>
+</select>
+</p>
+<p>
+  <button type="submit">Enviar</button>
+<p>
+</form>
+
+<p id="demo"></p>
+
+<script>
+  var str1 = "";
+  const scriptURL = 'https://script.google.com/macros/s/AKfycby8lYteMcxPpDAddlYebwqUoj8mHYd2ZP7DFEccJbajhEP92RlJ/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    document.getElementById("demo").innerHTML = "enviado";
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .then(response => document.getElementById("demo").innerHTML = str1.concat("enviado ",response))	  
+      .catch(error => console.error('Error!', error.message))
+      .catch(error =>  document.getElementById("demo").innerHTML = str1.concat("error", error))
+  })
+</script>
+
+
+
+</body>
+</html>
