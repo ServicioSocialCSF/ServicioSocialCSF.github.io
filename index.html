@@ -73,124 +73,23 @@ cursor: pointer;
 </head>
 <body>
 
-<form class="myForm" method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
-
-<h1> Inscripcion Servicio Social </h1>
-
-<p>
-<label>Org
-<input type="text" name="customer_name" required>
-</label> 
-</p>
-	
-<p>
-<label>Taller
-<select id="pickup_place" name="pickup_place">
-<option value="" selected="selected">Select One</option>
-<option value="1" > Talleres AAMI</option>
-<option value="2" > Abrazo ACUMI</option>
-<option value="" >Salvando al Desierto de los Leones</option>
-<option value="" >Educación y rehabilitación integral a personas con parálisis cerebral.</option>
-<option value="" >Lucha contra la Esclerósis lateral Amiotrófica con Apoyo Integral Gila</option>
-<option value="" >Di sí a la vida. Sí a la donación de órganos</option>
-<option value="" >Amiestades uno a uno/ Salidas recreativas</option>
-<option value="" >Block tras block</option>
-<option value="" >Integración multidisciplinaria intergeneracional en la casa hogar para adultos mayores</option>
-<option value="" >Vida independiente para personas adultas con discapacidad intelectual</option>
-<option value="" >Cursos presenciales y virtuales del CCA</option>
-<option value="" >Dándonos a conocer</option>
-<option value="" >Compartir fraterno</option>
-<option value="" >Apoyo a la comunidad y al centro/Clases a los niños de preescolar</option>
-<option value="" >Proyecto de investigación en evaluación de políticas públicas y programas sociales.</option>
-<option value="" >Tocando corazones</option>
-<option value="" >COMUNAL Comunidad Altruista</option>
-<option value="" >Crecemos Leyendo</option>
-<option value="" >Cvium</option>
-<option value="" >Nunayú</option>
-<option value="" >Linfty</option>
-<option value="" >Ingeniería: principios y aplicaciones</option>
-<option value="" >Impartir clases de computación e inglés</option>
-<option value="" >Finanzas mano a mano e impulsando mi producto</option>
-<option value="" >Promover una educación integral de los niños, fortaleciendo diferentes procesos y programas</option>
-<option value="" >Estrategia de posicionamiento</option>
-<option value="" >Transformando mi comunidad</option>
-<option value="" >Armado de mapa solidario</option>
-<option value="" >Atención a derechohabientes en estado vulnerable del ISSSTE</option>
-<option value="" >Yo soy voluntario lazos</option>
-<option value="" >Fortaleciendo a quien fortalece</option>
-<option value="" >Relaciones personales de calidad y proyectos personales</option>
-<option value="" >Promoción y desarrollo de habilidades sociales en niños</option>
-<option value="" >Educación ambiental</option>
-<option value="" >Asesorías educativas y recreativas</option>
-<option value="" >Talleres de apoyo al aprendizaje y lenguaje</option>
-<option value="" >Jóvenes narradores Tec</option>
-<option value="" >Trabajando en el fortalecimeinto de grupos vulnerables atendidos en I.A.P.</option>
-<option value="" >LAO Laboratorio de Artes y Oficios</option>
-<option value="" >Luka</option>
-<option value="" >Reinventando horizontes para la longevidad y su vinculación con proyectos laborales</option>
-<option value="" >Mini borregos</option>
-<option value="" >Motivos para amar a México</option>
-<option value="" >Fortalecimiento cultural y social del entorno actual</option>
-<option value="" >Desarrollo sostenible con perspectiva de Derechos Humanos en zona urbano marginal</option>
-<option value="" >Apoyo a programas de desarrollo comunitario y educación en nutrición y sostenibilidad</option>
-<option value="" >Actualización del Sistema de Información Estadística Municipal de Gobernabilidad y Desarrollo</option>
-<option value="" >Pakaraima</option>
-<option value="" >Comunicación social/Creando comunidad</option>
-<option value="" >Asesoría prepanet</option>
-<option value="" >Mercadotecnia/Acompañamiento en actividades deportivas/Desarrollo psicomotriz</option>
-<option value="" >Regeneración socioambiental de la Barranca de Tarango</option>
-<option value="" >Campaña para captar nuevos donantes y estrategias para crecer el taller de panadería</option>
-<option value="" >Apoyo al paramédico integral</option>
-<option value="" >Diseño e implementación de estrategias de incremento de impacto</option>
-<option value="" >Implementación de recomendaciones de capitalismo consciente</option>
-<option value="" >Programas de Unidos CDMX</option>
-<option value="" >Voluntariado IMSS</option>
-<option value="" >Proyectando vidas</option>
-<option value="" >Educando a la niñez</option>
-<option value="" >SER (separación ecológica de residuos)</option>
-
-
-</select>
-</label> 
-</p>
-
-
-<p>
-<label>Nombre 
-<input type="tel" name="phone_number">
-</label>
-</p>
-
-<p>
-<label>Matricula
-<input type="text" name="email_address">
-</label>
-</p>
-
-<p><button>Enviar</button></p>
-
-</form>
-
-
 <form name="submit-to-google-sheet" class="myForm" method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
 
 
 <h1> Inscripcion Servicio Social </h1>
 
 <p>
+<label> Correo de institucion
   <input name="email" type="email" placeholder="Email" required>
-</p>
-<p>
-  <input name="matricula" type="text" placeholder="matricula">
-  <input name="nombre" type="text" placeholder="nombre">
 </p>
 
 <p>
+<label> Proyecto
   <select name="proyecto">	  
 <option value="" selected="selected">Proyecto</option>
 <option value="1" > Talleres AAMI</option>
 <option value="2" > Abrazo ACUMI</option>
-<option value="3" >Salvando al Desierto de los Leones</option>
+<option value="3" > Lucha contra la Esclerósis Lateral Amiotrófica con Apoyo Integral Gila A.C. </option>
 <option value="4" >Educación y rehabilitación integral a personas con parálisis cerebral.</option>
 <option value="5" >Lucha contra la Esclerósis lateral Amiotrófica con Apoyo Integral Gila</option>
 <option value="6" >Di sí a la vida. Sí a la donación de órganos</option>
@@ -238,12 +137,26 @@ cursor: pointer;
 <option value="48" >Pakaraima</option>
 </select>
 </p>
+
+
+<p>
+<label> Matricula del alumno
+  <input name="matricula" type="text" placeholder="matricula">
+</p>
+
+<p>
+<label> Nombre del alumno
+  <input name="nombre" type="text" placeholder="nombre">
+</p>
+
 <p>
   <button type="submit">Enviar</button>
 <p>
+
+
 </form>
 
-<p id="demo"></p>
+<p class="myForm" style="background-color:cyan" id="demo"></p>
 
 <script>
   var str1 = "";
