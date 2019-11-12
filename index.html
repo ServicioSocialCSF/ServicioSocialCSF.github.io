@@ -157,7 +157,9 @@ cursor: pointer;
 
 <p class="myForm" style="background-color:cyan" id="demo"></p>
 
-<p id="yes"> </p>
+<p id="yes">   
+  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSG-zk4bVrKT51lqmQ0kh-hn1YsqiS2CWYX9PTfJShzxas7aGCzYxO8VIgAeRHEw4JIyWX_dKiaFBuP/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"> </iframe>;
+</p>
   
 <script>
   var str1 = "";
@@ -172,7 +174,6 @@ cursor: pointer;
       .then(response => document.getElementById("demo").innerHTML = str1.concat("enviado correctamente"))	  
       .catch(error => console.error('Error!', error.message))
       .catch(error =>  document.getElementById("demo").innerHTML = str1.concat("error", error))
-    document.getElementById("yes").innerHTML = <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSG-zk4bVrKT51lqmQ0kh-hn1YsqiS2CWYX9PTfJShzxas7aGCzYxO8VIgAeRHEw4JIyWX_dKiaFBuP/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>;
   })
 </script>
 
