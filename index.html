@@ -167,7 +167,7 @@ cursor: pointer;
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => console.log('Success!', response))
-      .then(response => document.getElementById("demo").innerHTML = str1.concat("enviado ",response))	  
+      .then(response => document.getElementById("demo").innerHTML = str1.concat("enviado correctamente"))	  
       .catch(error => console.error('Error!', error.message))
       .catch(error =>  document.getElementById("demo").innerHTML = str1.concat("error", error))
   })
