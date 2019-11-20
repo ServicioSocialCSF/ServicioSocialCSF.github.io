@@ -216,6 +216,10 @@ $('#submit-form').on('click', function(e) {
      document.getElementById("demo").innerHTML = "enviado correctamente"
 
     // do something
+  ).fail(
+     document.getElementById("demo").innerHTML = "ERROR"
+
+    // do something
   );
 })
 </script>
