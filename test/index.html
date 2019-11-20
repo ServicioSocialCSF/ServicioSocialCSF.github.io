@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+<title>Inscripcion Servicio Social</title>
+
+<!-- CSS -->
+<style>
+.myForm {
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.8em;
+width: 20em;
+padding: 1em;
+border: 1px solid #ccc;
+}
+
+.myForm * {
+box-sizing: border-box;
+}
+
+.myForm fieldset {
+border: none;
+padding: 0;
+}
+
+.myForm legend,
+.myForm label {
+padding: 0;
+font-weight: bold;
+}
+
+.myForm label.choice {
+font-size: 0.9em;
+font-weight: normal;
+}
+
+.myForm input[type="text"],
+.myForm input[type="tel"],
+.myForm input[type="email"],
+.myForm input[type="datetime-local"],
+.myForm select,
+.myForm textarea {
+display: block;
+width: 100%;
+border: 1px solid #ccc;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.9em;
+padding: 0.3em;
+}
+
+.myForm textarea {
+height: 100px;
+}
+
+.myForm button {
+padding: 1em;
+border-radius: 0.5em;
+background: #eee;
+border: none;
+font-weight: bold;
+margin-top: 1em;
+}
+
+.myForm button:hover {
+background: #ccc;
+cursor: pointer;
+}
+</style>
+
+
+</head>
+<body>
+
+<form id="test-form" name="submit-to-google-sheet" class="myForm" method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+
+
+<h1> Inscripcion Servicio Social </h1>
+
+<p>
+<label> Correo de institucion
+  <input name="email" type="email" placeholder="Email" required>
+</p>
+
+<p>
+<label> Proyecto
+  <select name="proyecto">	  
+<option value="" selected="selected">Proyecto</option>
+<option value="1" > Talleres AAMI</option>
+<option value="2" > Abrazo ACUMI</option>
+<option value="3" > Lucha contra la Esclerósis Lateral Amiotrófica con Apoyo Integral Gila A.C. </option>
+<option value="4" > PROGRAMA DE APOYO LEGISLATIVO</option>
+<option value="5" > Cursos virtuales y presenciales del Centro Comunitario de Aprendizaje</option>
+<option value="6" > Formación Comunitaria Compartir Fraterno- San Mateo</option>
+<option value="7" > Formación Comunitaria Compartir Fraterno- Jalapa el Grande</option>
+<option value="8" > Formación Comunitaria Compartir Fraterno - Microsoft</option>
+<option value="9" > Apoyo a la comunidad y al Centro</option>
+<option value="10" > Pedro y el Lobo - Ballet infantil</option>
+<option value="11" > Elaboración de contenido electrónico para redes sociales y página web</option>
+<option value="12" > Construyendo Lo Hacemos Todos</option>
+<option value="13" > Presencia en Línea e Impacto en Redes Sociales</option>
+<option value="14" > Capacitación en Herramientas Digitales</option>
+<option value="15" > DIF Huixquilucan</option>
+<option value="16" > Sistematización y seguimiento de casos de Asistencia Judicial Internacional</option>
+<option value="17" > Seguimiento a temas multiculturales</option>
+<option value="18" > Promoción cultural</option>
+<option value="19" > Promover una educación integral a los niños fortaleciendo diferentes procesos y programas</option>
+<option value="20" > Posicionamiento de Fondo para la Paz</option>
+<option value="21" > Basta YA</option>
+<option value="22" > Enseñale a un niño a hacer lo que te apasiona</option>
+<option value="23" > Proyecto de actividades productivas para jóvenes con parálisis cerebral y otras discapacidades</option>
+<option value="24" > Fortaleciendo a quien fortalece</option>
+<option value="25" > Convivencia y atención en actividades diarias de personas con discapacidad</option>
+<option value="26" > Contenidos Multimedia y Audiovisual para la promoción y difusión de las actividades de la Fundación San Felipe de Jesús I.A.P.</option>
+<option value="27" > Control de Calidad en Almacén
+<option value="28" > APOYO A MICROEMPRESAS JUVENILES</option>
+<option value="29" > ASESORIAS EDUCATIVAS Y RECREATIVAS HODIBISO -Mexicanos</option>
+<option value="30" > ASESORIAS EDUCATIVAS Y RECREATIVAS HODIBISO -Tepeaca</option>
+<option value="31" > Preescolar ,primaria y secundaria para niñas y niños sordos , y talleres vespertinos de apoyo al aprendizaje y lenguaj</option>e
+<option value="32" > Reinventando horizontes para la longevidad y su vinculación con proyectos laborales</option>
+<option value="33" > Motivos para amar a México</option>
+<option value="34" > MISIÓN EDUCATIVA</option>
+<option value="35" > Acompañamiento e intervención hospitalaria</option>
+<option value="36" > Actualización del Sistema de Información Estadística Municipal de Gobernabilidad y Desarrollo</option>
+<option value="37" > Preparación de ecotecnias y colaboraciónes para reducir la huella de carbono del Festival Pakaraima 2020 </option>
+<option value="38" > Asesoría Prepanet</option>
+<option value="39" > Servicio social en la Secretaría de Hacienda y Crédito Público</option>
+<option value="40" > APOYO MEDICO INTEGRAL, SERVICIO MEDICO</option>
+<option value="41" > Producción de los Medios Digitales del Sistema Público de Radiodifusión de la Ciudad de México.</option>
+<option value="42" > INTEGRACION MULTIDISCIPLINARIA INTERGENERACIONAL EN LA CASA HOGAR PARA ADULTOS MAYORES</option>
+<option value="43" > RRPP y difusión</option>
+<option value="44" > SWISS FOUNDATION AGAINST BLINDNESS IN MEXICO, AC</option>
+<option value="45" > Branding Corporativo y Posicionamiento en Redes Sociales</option>
+<option value="46" > Voluntariado IMSS</option>
+<option value="47" >Estrategia de comunicación, promoción y publicidad de ASOMAS </option>
+<option value="48" >Atención a adultos mayores en casas de cuidado diarios del ISSSTE</option>
+<option value="49" >ASESORIAS EDUCATIVAS Y RECREATIVAS HODIBISO -Tlapechico</option>
+<option value="50" >Trabajando en favor de personas en situación vulnerable atendidas en IAP</option>
+<option value="51" >LAO</option>
+<option value="52" >Bienestar laboral</option>
+<option value="53" >Campaña de concientización sobre la mujer para el 8 de marzo</option>
+<option value="54" >Fortalecimiento de capacidades administrativas y de finanzas básicas</option>
+<option value="55" >Manual de procesos para elaboración de presupuestos proyectados</option>
+<option value="56" >Campañas MKT con causa</option>
+<option value="57" >Planes de negocios innovadores bajo el esquema de sociedades de confianza</option>
+<option value="58" >EMPRENDIENDOBIDA</option>
+</select>
+</p>
+
+<p>
+<label> Alta o Baja de alumno
+  <select name = "altabaja">
+    <option value="alta"> Dar de Alta </option>
+    <option value="baja"> Dar de Baja </option>
+  </select>
+</p>
+  
+<p>
+<label> Matricula del alumno
+  <input name="matricula" type="text" placeholder="matricula">
+</p>
+
+<p>
+<label> Nombre del alumno
+  <input name="nombre" type="text" placeholder="nombre">
+</p>
+
+<p>
+  <button type="submit"id="submit-form">enviar</button>
+<p>
+
+
+</form>
+
+<p class="myForm" style="background-color:cyan" id="demo"></p>
+
+<!--
+ <p id="yes">   
+  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSG-zk4bVrKT51lqmQ0kh-hn1YsqiS2CWYX9PTfJShzxas7aGCzYxO8VIgAeRHEw4JIyWX_dKiaFBuP/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"> </iframe>
+ </p>
+-->
+  
+<script>
+$.fn.serializeObject = function()
+{
+var o = {};
+var a = this.serializeArray();
+$.each(a, function() {
+if (o[this.name]) {
+if (!o[this.name].push) {
+o[this.name] = [o[this.name]];
+}
+o[this.name].push(this.value || '');
+} else {
+o[this.name] = this.value || '';
+}
+});
+return o;
+};
+  
+var $form = $('form#test-form'),
+    url = 'https://script.google.com/macros/s/AKfycbwVsxRdkamiomSH-OCSoyna82vtmhk5wz58Lcfp9W8ZNZp_knFX/exec'
+
+$('#submit-form').on('click', function(e) {
+  e.preventDefault();
+  var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form.serializeObject()
+  }).done(
+     document.getElementById("demo").innerHTML = "enviado correctamente"
+
+  //).fail(
+  //   document.getElementById("demo").innerHTML = "ERROR"
+
+  );
+})
+</script>
+
+
+
+</body>
+</html>
