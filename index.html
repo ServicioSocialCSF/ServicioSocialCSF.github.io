@@ -182,19 +182,23 @@ cursor: pointer;
 -->
   
 <script>
-  var str1 = "";
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwVsxRdkamiomSH-OCSoyna82vtmhk5wz58Lcfp9W8ZNZp_knFX/exec'
-  const form = document.forms['submit-to-google-sheet']
 
-  form.addEventListener('submit', e => {
-    document.getElementById("demo").innerHTML = "enviado";
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
-      .then(response => document.getElementById("demo").innerHTML = str1.concat("enviado correctamente"))	  
-      .catch(error => console.error('Error!', error.message))
-      .catch(error =>  document.getElementById("demo").innerHTML = str1.concat("error", error))
-  })
+var $form = $('form#test-form'),
+    url = 'https://script.google.com/macros/s/AKfycbwVsxRdkamiomSH-OCSoyna82vtmhk5wz58Lcfp9W8ZNZp_knFX/exec'
+
+$('#submit-form').on('click', function(e) {
+  e.preventDefault();
+  var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form.serializeObject()
+  }).success(
+     document.getElementById("demo").innerHTML = "enviado correctamente";
+
+    // do something
+  );
+})
 </script>
 
 
