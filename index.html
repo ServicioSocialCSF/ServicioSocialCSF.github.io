@@ -212,8 +212,8 @@ $('#submit-form').on('click', function(e) {
     method: "GET",
     dataType: "json",
     data: $form.serializeObject()
-  }).success(
-     //document.getElementById("demo").innerHTML = "enviado correctamente";
+  }).done(
+     document.getElementById("demo").innerHTML = "enviado correctamente";
 
     // do something
   );
